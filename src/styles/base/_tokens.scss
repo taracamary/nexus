@@ -1,0 +1,18 @@
+:root {
+  --color-raw-black: #000;
+  --color-raw-white: #fff;
+  --color-raw-blue: #0147ff;
+  --color-raw-dark: #1c1a1a;
+  --color-raw-surface: #1a1a1a;
+  --color-raw-grey: #dedee0;
+  --color-raw-muted: #7e7e7e;
+  --color-background-page: var(--color-raw-black);
+  --color-background-surface: var(--color-raw-surface);
+  --color-background-muted: var(--color-raw-grey);
+  --color-text-primary: var(--color-raw-white);
+  --color-text-muted: var(--color-raw-muted);
+  --color-text-inverse: var(--color-raw-dark);
+  --color-accent-primary: var(--color-raw-blue);
+  --color-text-on-accent: var(--color-raw-white);
+  --color-border-primary: var(--color-raw-white);
+}

@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint:js": "eslint .",
     "lint:styles": "stylelint \"src/**/*.{css,scss}\" --allow-empty-input",
-    "lint:html": "html-validate \"**/*.html\"",
+    "lint:html": "html-validate \"*.html\" \"src/**/*.html\"",
     "lint": "npm run lint:js && npm run lint:styles && npm run lint:html",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
