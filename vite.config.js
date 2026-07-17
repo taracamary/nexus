@@ -6,10 +6,6 @@ import include from "posthtml-include";
 const srcRoot = path.resolve(import.meta.dirname, "src");
 const indexHtmlPath = path.resolve(import.meta.dirname, "index.html");
 
-/**
- * Build-time HTML includes via PostHTML + posthtml-include.
- * Uses Vite's transformIndexHtml hook (dev + build).
- */
 function posthtmlInclude() {
   return {
     name: "posthtml-include",

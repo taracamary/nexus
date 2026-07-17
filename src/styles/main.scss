@@ -1,4 +1,5 @@
+@use "./tools/functions" as *;
 @use "./base/reset";
 @use "./base/tokens";
 @use "./layout/container";
-@use "./sections/hero";
+@use "../sections/hero/hero";
