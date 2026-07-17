@@ -1,7 +1,21 @@
 {
   "extends": ["html-validate:recommended"],
+  "elements": [
+    "html5",
+    {
+      "include": {
+        "flow": true,
+        "attributes": {
+          "src": {
+            "required": true
+          }
+        }
+      }
+    }
+  ],
   "rules": {
     "doctype-style": ["error", { "style": "lowercase" }],
-    "void-style": ["error", { "style": "selfclosing" }]
+    "void-style": ["error", { "style": "selfclosing" }],
+    "element-name": ["error", { "whitelist": ["include"] }]
   }
 }
