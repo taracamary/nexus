@@ -1,5 +1,7 @@
 @use "./tools/functions" as *;
+@use "./base/fonts";
 @use "./base/reset";
 @use "./base/tokens";
+@use "./base/typography";
 @use "./layout/container";
 @use "../sections/hero/hero";
