@@ -1,0 +1,53 @@
+@use "../../styles/tools/functions" as *;
+
+.logotypes {
+  padding-block: rem(40px);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(24px) rem(32px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: rem(48px);
+  }
+
+  &__image {
+    display: block;
+    width: auto;
+    max-width: rem(148px);
+    height: rem(48px);
+    object-fit: contain;
+    mix-blend-mode: luminosity;
+  }
+
+  @media (width <= rem(768px)) {
+    &__list {
+      justify-content: center;
+    }
+
+    &__item {
+      width: calc(50% - rem(16px));
+    }
+
+    &__image {
+      margin-inline: auto;
+    }
+  }
+
+  @media (width <= rem(480px)) {
+    &__item {
+      width: 100%;
+    }
+  }
+}
