@@ -5,11 +5,22 @@ export default [
   {
     ignores: ["dist/**", "node_modules/**"],
   },
-  js.configs.recommended,
   {
-    files: ["**/*.js"],
+    files: ["vite.config.js"],
+    languageOptions: {
+      globals: globals.node,
+    },
+    rules: {
+      ...js.configs.recommended.rules,
+    },
+  },
+  {
+    files: ["src/**/*.js"],
     languageOptions: {
       globals: globals.browser,
+    },
+    rules: {
+      ...js.configs.recommended.rules,
     },
   },
 ];
